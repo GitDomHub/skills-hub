@@ -6,6 +6,11 @@ thumbnail.
 
 Open `index.html` in a browser to see the library page.
 
+The library also lists two tools I use and published as their own repos. Each has a short page here and a link to its source:
+
+- [Don't delete my drive](tools/dont-delete-my-drive/): a safety hook for Claude Code.
+- [PinPoint](tools/pinpoint-feedback/): click-to-pin visual feedback for any web page.
+
 ## Folder layout
 
 ```
@@ -17,6 +22,9 @@ skills/
     README.md                    install, how to use, what to check
     EXAMPLES.md                  bad vs good, with the failed test named
     hero.webp                    thumbnail, 1200x675
+tools/
+  dont-delete-my-drive/          short page + hero, links to its own repo
+  pinpoint-feedback/             short page + hero, links to its own repo
 ```
 
 ## Install a skill
