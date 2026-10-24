@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marketing Skills</title>
+<meta name="description" content="Marketing skills for Claude Code. Install one, describe the job, get work back in a format you can use.">
+<style>
+  :root {
+    --bg: #f6f4ef;
+    --surface: #ffffff;
+    --ink: #1b1d22;
+    --muted: #5d6270;
+    --line: #e2dfd6;
+    --accent: #2f6f4e;
+    --accent-soft: #e4efe8;
+    --bad: #9a3b2e;
+    --good: #2f6f4e;
+    --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101216;
+      --surface: #181b21;
+      --ink: #eceef2;
+      --muted: #9aa1ae;
+      --line: #2a2e37;
+      --accent: #7fc29c;
+      --accent-soft: #1d2b23;
+      --bad: #e0897c;
+      --good: #7fc29c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101216;
+    --surface: #181b21;
+    --ink: #eceef2;
+    --muted: #9aa1ae;
+    --line: #2a2e37;
+    --accent: #7fc29c;
+    --accent-soft: #1d2b23;
+    --bad: #e0897c;
+    --good: #7fc29c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  header.hero { padding: 72px 0 40px; }
+  .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: 13px; }
+  h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.1; margin: 10px 0 16px; letter-spacing: -.02em; }
+  .lede { color: var(--muted); font-size: 18px; max-width: 640px; margin: 0; }
+  h2 { font-size: 26px; margin: 56px 0 14px; letter-spacing: -.01em; }
+  .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+  .thumb {
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, var(--accent-soft), var(--surface));
+    display: grid;
+    place-items: center;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--line);
+  }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card .body { padding: 18px 20px 22px; }
+  .card h3 { margin: 0 0 6px; font-size: 19px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .tag { display: inline-block; margin-top: 12px; font-size: 12px; color: var(--accent); background: var(--accent-soft); padding: 3px 9px; border-radius: 999px; }
+  .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  .steps li { counter-increment: s; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px 16px 58px; position: relative; }
+  .steps li::before { content: counter(s); position: absolute; left: 18px; top: 16px; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--bg); display: grid; place-items: center; font-size: 14px; font-weight: 700; }
+  code, pre { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 14px; }
+  pre { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; overflow-x: auto; margin: 0; }
+  .note { color: var(--muted); font-size: 14px; margin-top: 10px; }
+  footer { margin: 72px 0 40px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 20px; }
+  @media (max-width: 480px) { header.hero { padding: 48px 0 28px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Skills library</div>
+    <h1>Marketing skills you can install in one minute.</h1>
+    <p class="lede">Each skill is a plain instruction file for Claude Code. Copy it in, describe the job in your own words, and get output in a format you can post or send.</p>
+  </header>
+
+  <h2>Skills</h2>
+  <div class="grid">
+    <a class="card" href="skills/curiosity-gap-hooks/">
+      <div class="thumb"><img src="skills/curiosity-gap-hooks/hero.webp" alt="One dark tile missing from a row of tiles, outlined in pink, under the headline LEAVE ONE GAP OPEN"></div>
+      <div class="body">
+        <h3>Curiosity Gap Hooks</h3>
+        <p>First lines for LinkedIn, email, articles, video and ads that make the reader read the next line.</p>
+        <span class="tag">Writing · 5 variants</span>
+      </div>
+    </a>
+  </div>
+
+  <h2>How to use any skill</h2>
+  <ol class="steps">
+    <li><strong>Install.</strong> Copy the skill folder into <code>~/.claude/skills/</code> (all projects) or <code>.claude/skills/</code> (one project). Start a new Claude Code session.</li>
+    <li><strong>Describe the job.</strong> Say what you want in plain words. The skill triggers from the description. You can also name it: <code>/skill-name</code>.</li>
+    <li><strong>Give the three inputs.</strong> The format, the reader, and the true result you want the piece to deliver.</li>
+    <li><strong>Check the output.</strong> Each skill lists the checks to run before you publish. Do those, then use it.</li>
+  </ol>
+
+  <h2>Install example</h2>
+  <pre><code>mkdir -p ~/.claude/skills/curiosity-gap-hooks
+cp skills/curiosity-gap-hooks/SKILL.md ~/.claude/skills/curiosity-gap-hooks/SKILL.md</code></pre>
+
+  <h2>Add a skill to this library</h2>
+  <p class="lede" style="font-size:16px">Make a folder under <code>skills/</code> with a <code>SKILL.md</code>, a <code>README.md</code> that shows how to use it with good and bad examples, and a <code>hero.webp</code> thumbnail. Then add a card above.</p>
+
+  <footer>
+    Skills are free to copy and adapt. Check each skill's README for its source and license.
+  </footer>
+</div>
+</body>
+</html>
